@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indira</title>
+<meta name="description" content="Portfolio of Indira,full-stack engineer and CyberSecurity Enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <span class="preloader__prompt">Indira</span>
+    <span class="preloader__type" id="preloaderType"></span><span class="preloader__cursor">▌</span>
+  </div>
+  <div class="preloader__bar"><div class="preloader__bar-fill" id="preloaderFill"></div></div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 44 44" class="to-top__ring">
+    <circle cx="22" cy="22" r="20"></circle>
+  </svg>
+  <span>↑</span>
+</button>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header__inner">
+    <a href="#home" class="logo">Indira<span>_</span></a>
+    <nav class="nav" id="mainNav">
+      <a href="#home" class="nav__link" data-nav>home</a>
+      <a href="#about" class="nav__link" data-nav>about</a>
+      <a href="#certifications" class="nav__link" data-nav>certifications</a>
+      <a href="#projects" class="nav__link" data-nav>projects</a>
+      <a href="#contact" class="nav__link" data-nav>contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+  <nav>
+    <a href="#home" data-nav>Home</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#services" data-nav>Services</a>
+    <a href="#work" data-nav>Work</a>
+    <a href="#certifications" data-nav>Certifications</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__stat reveal">
+        <span class="hero__stat-num" data-count="5+" data-suffix="+">0</span>
+        <span class="hero__stat-label">Real world projects </span>
+      </div>
+
+      <div class="hero__main reveal">
+
+        <h1 class="hero__title">Indira</h1>
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <span class="terminal__title">about-me.sh</span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="terminal__out">full-stack developer | CyberSecurity Enthusiast | Problem Solver | AI Engineer </p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__side reveal">
+        <p class="hero__intro">Computer science engineer focused on AI,CyberSecurityIoT — turning research into things people actually use.</p>
+        <a href="https://drive.google.com/file/d/1UTNqavkYkJIF6tQTUC0nRnN7XwSCK8dz/view?usp=drivesdk" class="btn btn--primary" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STACK MARQUEE ============ -->
+  <section class="marquee-section">
+    <div class="wrap"><p class="marquee-section__label">Tools &amp; stacks I reach for</p></div>
+    <div class="marquee" data-speed="slow">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Python</span><span>C</span><span>Java</span><span>React</span><span>Node.js</span><span>JavaScript</span>
+        <span>MySQL</span><span>MongoDB</span><span>AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="wrap about__grid">
+      <p class="eyebrow reveal">About</p>
+      <div class="about__content">
+        <p class="about__text reveal">I'm Indira Priyadarsini, a tech enthusiast and computer science Student who likes building intelligent, interactive systems. Strong foundation in AI, IoT and Full-Stack development — I blend creativity and logic to craft digital solutions that actually connect people and technology.</p>
+
+        <div class="counters reveal">
+          <div class="counter">
+            <span class="counter__num" data-count="5" data-suffix="+">0</span>
+            <span class="counter__label">Projects</span>
+          </div>
+          <div class="counter">
+            <span class="counter__num" data-count="2">0</span>
+            <span class="counter__label">Hackathons</span>
+          </div>
+          <div class="counter">
+            <span class="counter__num" data-count="8.5" data-decimal="1" data-suffix="">0</span>
+            <span class="counter__label">CGPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <!-- ============ ACHIEVEMENTS / PARTICIPATIONS ============ -->
+<section id="participations" class="projects">
+  <div class="wrap">
+    <h2 class="section-title reveal">Where I've Shown Up</h2>
+
+    <div class="project-card reveal">
+      <p class="eyebrow">VVITU</p>
+      <h3>Smart India Hackathon (SIH)</h3>
+      <p>
+        Participated in Smart India Hackathon, collaborating with a team to
+        develop innovative solutions for real-world challenges.
+      </p>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="eyebrow">VVITU</p>
+      <h3>NEXORA - The Full-Stack Expo organized by IEEE</h3>
+      <p>
+        Participated in NEXORA, gaining exposure to full-stack development,
+        modern technologies, and industry practices.
+      </p>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="eyebrow">WORKSHOP</p>
+      <h3>Cyber Security Workshop</h3>
+      <p>
+        Attended hands-on sessions on cyber security concepts, networking,
+        and ethical hacking fundamentals.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section id="certifications" class="certs">
+    <div class="wrap">
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="certs__grid">
+        <article class="cert-card reveal">
+          <p class="cert-card__text">AWS Academy Graduate - Cloud Foundations</p>
+          <div class="cert-card__meta"><h4></h4><span>Amazon Web Services (AWS)</span></div>
+        </article>
+        <article class="cert-card reveal">
+          <p class="cert-card__text">The Joy of Computing Using Python</p>
+          <div class="cert-card__meta"></h4><span>NPTEL</span></div>
+        </article>
+        <article class="cert-card reveal">
+          <p class="cert-card__text">Certified in Java programming with a strong focus on fundamentals and structured coding.</p>
+          <div class="cert-card__meta"><h4>Practice Java</h4><span>Code Chef</span></div>
+        </article>
+        <article class="cert-card reveal">
+          <p class="cert-card__text">Certified in Beginner Data Structures and Algorithms.</p>
+          <div class="cert-card__meta"><h4>Beginner DSA</h4><span>Code Chef</span></div>
+        </article>
+        <article class="cert-card reveal">
+          <p class="cert-card__text">Completed a 500 Difficulty rating Problems focused on problem-solving.</p>
+          <div class="cert-card__meta"><h4>500 Difficulty rating Problems</h4><span>Code Chef</span></div>
+        </article>
+         <article class="cert-card reveal">
+          <p class="cert-card__text">Completed HTML5 Course: From Beginning to Expert</p>
+          <div class="cert-card__meta"><h4>The Complete HTML5 Course: From Beginning to Expert</h4><span>Udemy</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+<section id="projects" class="projects">
+  <div class="wrap">
+    <h2 class="section-title reveal">Projects</h2>
+
+    <div class="project-card">
+      <p class="eyebrow">MERN Stack</p>
+      <h3>Power-Fit</h3>
+      <a class="btn btn--ghost"
+         href="https://github.com/indira7-kosaraju/mini_project"
+         target="_blank">
+         View on GitHub →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <p class="eyebrow">C++ · Arduino · IoT</p>
+      <h3>GuardianEye Smart Surveillance System</h3>
+      <a class="btn btn--ghost"
+         href="https://github.com/indira7-kosaraju/GuardianEye-Smart-Surveillance-System"
+         target="_blank">
+         View on GitHub →
+      </a>
+    </div>
+
+    <div class="project-card">
+      <p class="eyebrow">Python</p>
+      <h3>Python Projects</h3>
+      <a class="btn btn--ghost"
+         href="https://github.com/indira7-kosaraju/KodbudPython-Internship-Tasks"
+         target="_blank">
+         View on GitHub →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="wrap contact__grid">
+      <div class="contact__info reveal">
+        <h2 class="section-title">Contact me</h2>
+        <div class="contact__item">
+          <span class="contact__icon">📍</span>
+          <div><h4>Location</h4><p>Guntur, Andhra Pradesh</p></div>
+        </div>
+        <div class="contact__item">
+          <span class="contact__icon">✉</span>
+          <div><h4>Email me</h4><p>indukosaraju7@gmail.com</p></div>
+        </div>
+        <div class="contact__item">
+          <span class="contact__icon">↗</span>
+          <div>
+            <h4>Socials</h4>
+            <div class="contact__socials">
+              <a href="https://www.linkedin.com/in/k-indira-priyadarsini" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://github.com/indira7-kosaraju" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <span class="field__error" data-error-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <span class="field__error" data-error-for="email"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Let's build something" required>
+          <span class="field__error" data-error-for="subject"></span>
+        </div>
+        <div class="field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <span class="field__error" data-error-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn--primary">Send message →</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="site-footer__eyebrow">Wanna work together?</p>
+    <a href="mailto:indukosaraju7@gmail.com" class="site-footer__cta">Hire me →</a>
+    <p class="site-footer__copy">© <span id="year"></span> Indira Kosaraju. Built with HTML, CSS &amp; vanilla JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
